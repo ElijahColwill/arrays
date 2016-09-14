@@ -30,9 +30,9 @@ for i in range(0, 13):
 for i in pizza:
     print "Slices eaten: %d" % i
 
-def countEvens(c):
+def countEvens(array0):
     even = 0
-    for nums in c:
+    for nums in array0:
         if nums % 2 == 0:
             even += 1
     return even
@@ -61,6 +61,8 @@ print centeredAverage([1, 1, 5, 5, 10, 8, 7])
 print centeredAverage([-10, -4, -2, -4, -2, 0])
 
 def sum13(array3):
+    if len(array3) == 0:
+        return 0
     skipnext = False
     sum = 0
     for i in array3:
@@ -78,3 +80,22 @@ print sum13([1, 2, 2, 1])
 print sum13([1, 1])
 print sum13([1, 2, 2, 1, 13])
 print sum13([1, 2, 2, 1, 13, 13, 13, 13, 1, 2])
+
+def sum67(array4):
+    if len(array4) == 0:
+        return 0
+    if6 = 0
+    sum = 0
+    for i in array4:
+        if if6 == 0:
+            if i == 6:
+                if6 = 1
+            else: sum += i
+        elif i == 7:
+            if6 = 0
+    return sum
+
+print "--"
+print sum67([1, 2, 2])
+print sum67([1, 2, 2, 6, 99, 99, 99, 7])
+print sum67([1, 1, 6, 7, 2])
