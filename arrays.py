@@ -49,3 +49,13 @@ print "--"
 print bigDiff([10, 3, 5, 6])
 print bigDiff([7, 2, 10, 9])
 print bigDiff([2, 10, 7, 2])
+
+def centeredAverage(array2):
+    array2.sort()
+    trimmed = array2[1:-1]
+    return sum(trimmed)/len(trimmed)
+
+print "--"
+print centeredAverage([1, 2, 3, 4, 100])
+print centeredAverage([1, 1, 5, 5, 10, 8, 7])
+print centeredAverage([-10, -4, -2, -4, -2, 0])
