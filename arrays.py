@@ -59,3 +59,22 @@ print "--"
 print centeredAverage([1, 2, 3, 4, 100])
 print centeredAverage([1, 1, 5, 5, 10, 8, 7])
 print centeredAverage([-10, -4, -2, -4, -2, 0])
+
+def sum13(array3):
+    skipnext = False
+    sum = 0
+    for i in array3:
+         if i == 13:
+             skipnext = True
+             continue
+         if skipnext:
+             skipnext = False
+             continue
+         else: sum += i
+    return sum
+
+print "--"
+print sum13([1, 2, 2, 1])
+print sum13([1, 1])
+print sum13([1, 2, 2, 1, 13])
+print sum13([1, 2, 2, 1, 13, 13, 13, 13, 1, 2])
