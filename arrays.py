@@ -41,3 +41,11 @@ print "--"
 print countEvens([2, 1, 2, 3, 4])
 print countEvens([2, 2, 0])
 print countEvens([1, 3, 5])
+
+def bigDiff(array1):
+    return max(array1) - min(array1)
+
+print "--"
+print bigDiff([10, 3, 5, 6])
+print bigDiff([7, 2, 10, 9])
+print bigDiff([2, 10, 7, 2])
