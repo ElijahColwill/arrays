@@ -84,18 +84,18 @@ print sum13([1, 2, 2, 1, 13, 13, 13, 13, 1, 2])
 def sum67(array4):
     if len(array4) == 0:
         return 0
-    if6 = 0
+    startswith6 = False
     sum = 0
     for i in array4:
-        if if6 == 0:
+        if not startswith6:
             if i == 6:
-                if6 = 1
+                startswith6 = True
             else: sum += i
         elif i == 7:
-            if6 = 0
+            startswith6 = False
     return sum
 
 print "--"
 print sum67([1, 2, 2])
-print sum67([1, 2, 2, 6, 99, 99, 99, 7])
+print sum67([1, 2, 2, 6, 99, 99, 99, 7, 1])
 print sum67([1, 1, 6, 7, 2])
