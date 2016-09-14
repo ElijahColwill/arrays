@@ -29,3 +29,15 @@ for i in range(0, 13):
 
 for i in pizza:
     print "Slices eaten: %d" % i
+
+def countEvens(c):
+    even = 0
+    for nums in c:
+        if nums % 2 == 0:
+            even += 1
+    return even
+
+print "--"
+print countEvens([2, 1, 2, 3, 4])
+print countEvens([2, 2, 0])
+print countEvens([1, 3, 5])
