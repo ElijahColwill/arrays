@@ -158,3 +158,15 @@ print "--"
 print more14([1, 4, 1]) # True
 print more14([1, 4, 1, 4]) # False
 print more14([1, 1]) # True
+
+def fizzArray(n):
+    array9 = []
+    for i in range(n):
+        array9.append(i)
+    return array9
+
+print "--"
+print fizzArray(4)
+print fizzArray(1)
+print fizzArray(10)
+print fizzArray(0)
