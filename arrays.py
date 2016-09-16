@@ -117,3 +117,17 @@ print "--"
 print has22([1, 2, 2])
 print has22([1, 2, 1, 2])
 print has22([2, 1, 2])
+
+def lucky13(array6):
+    detected1or3 = False
+    for i in array6:
+        if i == 1:
+            detected1or3 = True
+        if i == 3:
+            detected1or3 = True
+    return not detected1or3
+
+print "--"
+print lucky13([0, 2, 4]) # True
+print lucky13([1, 2, 3]) # False
+print lucky13([1, 2, 4]) # False
