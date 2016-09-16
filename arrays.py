@@ -143,3 +143,18 @@ print "--"
 print sum28([2, 3, 2, 2, 4, 2]) # True
 print sum28([2, 3, 2, 2, 4, 2, 2]) # False
 print sum28([1, 2, 3, 4]) # False
+
+def more14(array8):
+    ones = 0
+    fours = 0
+    for i in array8:
+        if i == 1:
+            ones += 1
+        if i == 4:
+            fours += 1
+    return ones > fours
+
+print "--"
+print more14([1, 4, 1]) # True
+print more14([1, 4, 1, 4]) # False
+print more14([1, 1]) # True
