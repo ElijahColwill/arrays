@@ -185,3 +185,15 @@ print "--"
 print only14([1, 4, 1, 4]) # True
 print only14([1, 4, 2, 4]) # False
 print only14([1, 1]) # True
+
+def fizzArray2(n):
+    array11 = []
+    for i in range(n):
+        i = str(i)
+        array11.append(i)
+    return array11
+
+print "--"
+print fizzArray2(4)
+print fizzArray2(10)
+print fizzArray2(2)
