@@ -131,3 +131,15 @@ print "--"
 print lucky13([0, 2, 4]) # True
 print lucky13([1, 2, 3]) # False
 print lucky13([1, 2, 4]) # False
+
+def sum28(array7):
+    twos = 0
+    for i in array7:
+        if i == 2:
+            twos += 1
+    return twos == 4
+
+print "--"
+print sum28([2, 3, 2, 2, 4, 2]) # True
+print sum28([2, 3, 2, 2, 4, 2, 2]) # False
+print sum28([1, 2, 3, 4]) # False
