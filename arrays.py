@@ -197,3 +197,23 @@ print "--"
 print fizzArray2(4)
 print fizzArray2(10)
 print fizzArray2(2)
+
+
+def sum13_2(array13):
+    sum = 0
+    for i in range(0, len(array13)):
+        if i == (len(array13) - 1):
+            if array13[i] != 13:
+                sum += array13[i]
+            else:
+                if array13[i] == 13:
+                    sum -= array13[i + 1]
+                else:
+                    sum += array13[i]
+    return sum
+
+print "--"
+print sum13_2([1, 2, 2, 1])
+print sum13_2([1, 1])
+print sum13_2([1, 2, 2, 1, 13])
+print sum13_2([1, 2, 2, 1, 13, 13, 13, 13, 1, 2])
