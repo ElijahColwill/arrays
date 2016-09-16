@@ -170,3 +170,18 @@ print fizzArray(4)
 print fizzArray(1)
 print fizzArray(10)
 print fizzArray(0)
+
+def only14(array10):
+    total = len(array10)
+    all14 = 0
+    for i in array10:
+        if i == 1:
+            all14 += 1
+        if i == 4:
+            all14 += 1
+    return total == all14
+
+print "--"
+print only14([1, 4, 1, 4]) # True
+print only14([1, 4, 2, 4]) # False
+print only14([1, 1]) # True
